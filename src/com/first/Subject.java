@@ -20,7 +20,6 @@ public class Subject {
         listOfObservers.remove(X);
     }
     void notifyObservers(){
-
         if(listOfObservers.isEmpty())return;
         for(IBlogObserver i : listOfObservers){
             i.update(newPost);

@@ -9,10 +9,10 @@ public class Observers implements IBlogObserver {
     public Observers(String name){
         this.name=name;
     }
-    ArrayList<Post> logger=new ArrayList<>();
+    ArrayList<Post> log=new ArrayList<>();
     @Override
     public void update(Post newPost) {
-        logger.add(newPost);
+        log.add(newPost);
         System.out.println("Alert:"+name+" you can see a new Post about "+newPost.getTitle());
     }
 }
